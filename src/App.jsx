@@ -4,6 +4,7 @@ import Footer from './components/Footer'
 import { Route, Routes } from 'react-router-dom'
 import TheCat from './pages/the-cat'
 import Home from './pages/Home'
+import Home2 from './pages/Home/index2'
 import LoadGallery from './pages/the-cat'
 import RickAndMorty from './pages/the-cat'
 
@@ -14,7 +15,7 @@ function App() {
       <Header />
       <Routes>
         <Route path='/' element={<Home/>} />
-       
+        <Route path='/index2' element={<Home2/>} />
         <Route path='/the-cat' element={<RickAndMorty/>} />
       </Routes>
       <Footer />

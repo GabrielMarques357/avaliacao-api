@@ -12,7 +12,7 @@ function Home() {
                 </button>
             </Link>
 
-            <Link to={'/Page'}>
+            <Link to={'/index2'}>
                 <button>
                     Page2
                 </button>

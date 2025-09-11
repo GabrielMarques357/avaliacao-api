@@ -1,23 +1,22 @@
 import { Link } from "react-router-dom"
 import './style.css'
+import loadGallery from '../../../Pagina2e3/main'
+
 
 function Page() {
     return (
         <>
             <h1>Page 2 :)</h1>
 
-            <Link to={'/RickAndMorty'}>
+            <Link to={'/the-cat'}>
                 <button>
                     Navegar para API
                 </button>
             </Link>
 
-            <Link to={'/RickAndMorty'}>
-                <button>
-                    Navegar para API
-                </button>
-            </Link>
-
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/NjXweFUgY78?si=gi45nnxSgWJNJMoh" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        
+            
         </>
     )
 }
