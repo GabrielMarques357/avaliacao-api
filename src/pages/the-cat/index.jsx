@@ -2,36 +2,36 @@
 import { useEffect, useState } from 'react'
 import { getCharacters } from '../../api/character'
 import { Link } from 'react-router-dom'
-import api from '../../api/api'
 
 
 
 
-function TheCat() {
+function RickAndMorty() {
 
     const [conteudo, setConteudo] = useState(<>Carregando</>)
 
 
 
     async function TranformaEmLista() {
-        const todosPersonagens = await getCharacters()
+        const todosGatos = await getCharacters()
+        console.log(todosGatos)
 
-        return todosPersonagens.map(personagem =>
-            <div className='card char' key={personagem.id}>
-                <img src={personagem.image} alt={`Foto de ${personagem.name}`} />
-                <h2>{personagem.name}</h2>
+        return todosGatos.map(gato =>
+            <div className='card char' key={gato.id}>
+                {/* 
+                    ""
+                */}
+                <img src={`https://cdn2.thecatapi.com/images/${gato.reference_image_id}.jpg`} alt={`Foto de ${gato.name}`} />
+                <h2>{gato.name}</h2>
 
                 <div className='char-info'>
-                    <span><b>Espécie: </b> {personagem.species} </span>
-                    <span><b>Gênero: </b> {personagem.gender} </span>
+                    <span><b>Origem: </b> {gato.origin} </span>
+                    <span><b>Pais: </b> {gato.country_codes} </span>
                 </div>
 
                 <div>
-                    <div className='lista-secundaria'>
-                        <b>Participações: </b>
-                        {/*personagem.episode.map()*/}
-                    </div>
-                    <h5><b>Status: </b> {personagem.status} </h5>
+                    
+                    <h5><b>Vai morrer em: </b> {gato.life_span} anos </h5>
                 </div>
 
             </div>
@@ -62,4 +62,4 @@ function TheCat() {
     )
 }
 
-export default TheCat
+export default RickAndMorty

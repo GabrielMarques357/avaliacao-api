@@ -1,20 +1,20 @@
 import { Link } from "react-router-dom"
 import './style.css'
 
-function Home() {
+function Page() {
     return (
         <>
-            <h1>Gerador de Gatinhos 😻:</h1>
+            <h1>Page 2 :)</h1>
 
-            <Link to={'/the-cat'}>
+            <Link to={'/RickAndMorty'}>
                 <button>
                     Navegar para API
                 </button>
             </Link>
 
-            <Link to={'/Page'}>
+            <Link to={'/RickAndMorty'}>
                 <button>
-                    Page2
+                    Navegar para API
                 </button>
             </Link>
 
@@ -22,4 +22,4 @@ function Home() {
     )
 }
 
-export default Home
+export default Page

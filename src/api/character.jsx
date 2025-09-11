@@ -1,11 +1,11 @@
 import api from "./api"
 
 export const getCharacters = async () => {
-    const response = await api.get('')
+    const response = await api.get('/breeds')
 
     if (response.status !== 200) {
         return []
     }
 
-    return response.data.results
+    return response.data
 }
