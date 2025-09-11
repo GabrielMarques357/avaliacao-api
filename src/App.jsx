@@ -2,10 +2,8 @@ import './App.css'
 import Header from './components/Header'
 import Footer from './components/Footer'
 import { Route, Routes } from 'react-router-dom'
-import TheCat from './pages/the-cat'
 import Home from './pages/Home'
 import Home2 from './pages/Home/index2'
-import LoadGallery from './pages/the-cat'
 import RickAndMorty from './pages/the-cat'
 
 function App() {
